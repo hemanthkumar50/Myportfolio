@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="image/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/Hemanthkumarportfolio.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+   
+    <script rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+   
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">PORT<span>FOLIO</span></label>
+    <ul>
+      <li><a href="#myhome">Home</a></li>
+      <li><a href="#myabout">About me</a></li>
+      <li><a href="#myskills">My Skills</a></li>
+      <li><a href="#myteam">My Team</a></li>
+      <li><a href="#mycontact">Contact me</a></li>
+    </ul>
+  </nav>
+  <section class="home nav" id="myhome">
+       <div class="max-width">
+          <div class="home-content">
+             <div class="text-1">Hi,Myself</div>
+             <div class="text-2">Hemanth kumar</div>
+              <div class="text-3">I'm a <span class="element">Coder</span></div>
+                 <a href="../port/slide.html">My memories</a>
+          </div>
+        </div>
+          <script> var typed = new Typed(".element", {
+            strings : ["Coder.","Designer.","Cricketer.","Youtuber."],
+            typespeed:1800,
+            backspeed:1600,
+            loop:true
+          });
+          </script>
+    </section>
+    <section class="about" id="myabout">
+        <div class="max-width"> 
+         <h2 class="title">About me</h2>
+         <div class="about-content">
+           <div class="column left">
+             <img class="about-content" src="../image/arrow.jpg" alt="">
+           </div> 
+           <div class="column right">
+             <div class="text">I'm Hemanth kumar and I'm a <span class="side">coder</span></div>
+             <p> I'm a front end developer. I like video editing and also have interest in web designing.I'm a hardworker as well as smartworker. I have knowledge in programming coding. I like to play cricket. I'm a all rounder in the cricket.I have some achivement in cricket.And i have also a youtube channel.I have done my schooling in jaya matriculation hr.sec.school.And pursing in higher education B.E (cse) jaya engineering college in Thiruninravur .I have participated in many events which have establised in my college.And my future aim is to become a expert in codind and technical skills. I also participated in IBM event with my team.And we developed AI.For my archivement and more details check link in given below.
+               </p>
+             </p>
+             <a href="../port/certificateorg.html">projects & courses</a>
+             <!-- <a href="https://youtube.com/channel/UCblwqu1Ox5LusOuusEE_TKA">My Channel</a> -->
+             <script src= "script.js"></script>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <script> var typed = new Typed(".side", {
+        strings : ["Coder.","Designer.","Cricketer.","Youtuber."],
+        typespeed:1800,
+        backspeed:1600,
+        loop:true
+      });
+      </script>
+    </section>
+
+    <!-- Technical skills -->
+    
+    <section class="skills" id="myskills">
+    <div class="max-width"> 
+      <h2 class="title1">My skills</h2>
+     </div>
+     <div class="subh1">Technical skills</div>
+     <div class="wrapper">
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">HTML </div>
+      </div> 
+      <div class="card">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text"> CSS</div>
+      </div> 
+      <div class="card js">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">JavaScript</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">Python</div>
+      </div>
+    </div>
+      <style src="../image/swiper-bundle.min.css"></style>
+      <script src="../js/prof.js"></script>
+      <script> let options = {
+        startAngle: -1.55,
+        size: 150,
+        value: 0.50,
+        fill: {gradient: ['blue', 'blue']}
+      }
+      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function(event, progress, stepValue){
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+      $(".js .bar").circleProgress({
+        value: 0.20
+      });
+      $(".react .bar").circleProgress({
+        value: 0.30 
+      });</script>
+    </section>
+   <!-- my team page -->
+   <section class="team" id="myteam">
+    <div class="max-width"> 
+     <h2 class="title">My Team</h2>
+    </div>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                 <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <script src= "script.js"></script>
+                        <div class="card-image">
+                            <img src="../image/mypic7.jpeg" alt="" class="card-img">
+                        </div>
+                    </div>
+            <div class="card-content">
+              <h2 class="name">Ganesh.P</h2>
+              <p class="description">I'm a frontend developer,Asstistant Choreographer and dance is my passion .</p>
+              <a href="https://instagram.com/ganeshmumbai_official?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+                <img src="../image/nagi2.jpg" alt="" class="card-img">
+            </div>
+        </div>
+
+        <div class="card-content">
+            <h2 class="name">Nagipragalathan.N</h2>
+            <p class="description">I'm software developer developer and full-stack developer.I'm a  leader in my team,iam strong in backend</p>
+
+            <a href="https://instagram.com/mr_lazy_05?igshid=YmMyMTA2M2Y=">View More</a>
+        </div>
+    </div>
+      <div class="card swiper-slide">
+          <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                  <img src="../image/ravi2.jpeg" alt="" class="card-img">
+              </div>
+          </div>
+
+          <div class="card-content">
+              <h2 class="name">Ravindran.S.B </h2>
+              <p class="description">I pursing in website developer.problem-solving and teamwork skill and web designer.</p>
+
+              <a href="https://instagram.com/ravindran_s_b_?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+      <div class="card swiper-slide">
+          <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                  <img src="../image/chandru.jpeg" alt="" class="card-img">
+              </div>
+          </div>
+
+          <div class="card-content">
+              <h2 class="name">chandru.p</h2>
+              <p class="description">I'm frontend developer and help the team by giving some ideas to make good projects.</p>
+              <a href="https://instagram.com/_c_h_a_n_d_r_u_______?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+      <div class="card swiper-slide">
+          <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                  <img src="../image/emman.jpeg" alt="" class="card-img">
+              </div>
+          </div>
+
+          <div class="card-content">
+              <h2 class="name">Emmanuel.F</h2>
+              <p class="description">I am primary level web developer and  I have good leadership skill aswell as a quick learner.</p>
+
+              <a href="https://instagram.com/mr.m_a_n_n_y?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+      <div class="card swiper-slide">
+          <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                  <img src="../image/rajan.jpeg" alt="" class="card-img">
+              </div>
+          </div>
+
+          <div class="card-content">
+              <h2 class="name">Rajan.R</h2>
+              <p class="description">I am a frontend developer and I done some projects, i always work together with my team</p>
+
+              <a href="https://instagram.com/aravinth_rajan_official?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+      <div class="card swiper-slide">
+          <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                  <img src="../image/kamesh.jpeg" alt="" class="card-img">
+              </div>
+          </div>
+
+          <div class="card-content">
+              <h2 class="name">kamesh.E</h2>
+              <p class="description">I am a frontend developer and i give ideas to design webpage and i strong in python.</p>
+
+              <a href="https://instagram.com/kamesh8649?igshid=YmMyMTA2M2Y=">View More</a>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script>var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
+  </script>
+</section> 
+
+
+
+
+ <!-- contact page -->  
+ <section class="contact" id="mycontact">
+  <div class="max-width"> 
+   <h2 class="title">Contact me</h2>
+  </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100055162656597"><i class="fab fa-facebook-f">   Facebook</i></a>
+        <a href="https://chat.whatsapp.com/KZNdQm1fU0YI0A6ShwqEye"><i class="fab fa-whatsapp">   Whatsapp</i></a>
+        <a href="https://www.instagram.com/+919344774067"><i class="fab fa-instagram">   Instagram</i></a>
+        <a href="https://www.linkedin.com/in/hemanth-kumar-bab982252"><i class="fab fa-linkedin-in">   linked-in</i></a>
+        <a href="https://youtube.com/channel/UCblwqu1Ox5LusOuusEE_TKA"><i class="fab fa-youtube">   Youtube</i></a>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-content">
+      <div class="name"></div>
+        <h3>This portfolio is done by</h3>
+        <i class='fab fa-studiovinari' style='font-size:56px'></i>
+        <h2 class="footer">Hemanth kumar</h2>
+        <p>This portfolio shows my information and what are achivements are done in my life</p>
+      </div>
+ 
+    <div class="footer-bottom">
+     <p>copyright &copy;2022<a href="#">Hemanth kumar portfolio</a>  </p>
+    </div>
+</div>
+<script> var typed = new Typed(".footer", {
+  strings : ["Hemanth kumar.","Hemanth kumar.","Crazy cricketer.","Abi-50"],
+  typespeed:10,
+  backspeed:10,
+  loop:true
+});
+</script>
+</footer>
+</body>
+</html>

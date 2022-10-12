@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+     <!-- <link rel="stylesheet" href="image/swiper-bundle.min.css">  -->
+    <title>Document</title>
+    <style>
+  *{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins" , sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+nav{
+   position: fixed;
+   background: blue; 
+   height: 60px;
+   width: 100%;
+   animation: nav 2s ease-in-out;
+   z-index: 999;
+}
+@keyframes nav{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+.logo{
+  color:white;
+  position: fixed;
+  font-size: 35px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.logo span{
+  color:black;
+  font-size: 25px;
+ 
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+ 
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+
+  .checkbtn{
+    display: block;
+  }
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:blue;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 999;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.achtive{
+    background: none;
+    color:black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+@media (max-width:391px){
+  label .logo{
+   
+    font-size: 15px;
+    font-weight: 300;   
+   }
+}
+ 
+ section{
+  background: black;
+  padding: 55px 50px;
+
+  }
+
+.projects .title{
+  color: white;
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin:10px 0px;
+ 
+
+}
+.right p span{
+  color: yellow;
+}
+ 
+.projects .about-content{ 
+ display:flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ 
+
+}
+.projects .about-content .left img{
+   
+   align-items: center;
+   margin: 25px 20px;
+   height: 75vh;
+   width: 80vh;
+   object-fit: cover;
+   
+}
+.projects .about-content .left2 img{
+   
+   align-items: center;
+   margin: 25px 20px;
+   height: 105vh;
+   width: 80vh;
+   object-fit: cover;
+   
+}
+.projects .about-content .right{
+  color: white;
+  width:46%;
+}
+.projects .about-content .right .text{
+  font-size:35px;
+  font-weight: 600;
+  color: blue;
+}
+.projects .about-content .right .text span{
+  color: red;
+}
+.projects .about-content .right p{
+  font-size:20px;
+  color: white;
+  
+}
+.projects .about-content .right a{
+  display:inline-block;
+  align-items: space-between;
+  margin: 30px 5px;
+  background: blue;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 6px;
+  border:2px solid blue;
+  transition: all 0.3s ease;
+}
+.projects .about-content .right a:hover{
+  color:blue;
+  background: none;
+}
+.about-content{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+/* about responsive */
+  @media(max-width:1274px){
+  .projects .about-content .right{
+     width: 100%;
+  }
+}
+ @media(max-width:1274px){
+  .projects .about-content .left img{
+    width: 75%;
+    height: 80%;
+  }
+}
+@media(max-width:670px){
+  
+  .projects .about-content .left2 img{
+    width: 75%;
+    height: 80%;
+  }
+} 
+@media (max-width:417px){
+  .about .about-content .right a{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .about .max-width h2{
+    font-size: 25px;
+    font-weight: 500;
+   }   
+   .about .about-content .right .text{
+  
+    font-size:20px;
+    font-weight: 300;
+   }
+   .about .about-content .right .text span{
+    font-size: 28px;
+   }
+   .about .about-content .right p{
+    font-size:18px;
+    
+    
+   }
+}
+     
+    </style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">PORTFOLIO</label>
+    <ul>
+      <li><a href="../port/Hemanthkumarportfolio.html">Home</a></li>
+      <li><a href="#mydata">Datathon</a></li>
+      <li><a href="#myfoss">Fossage-22</a></li>
+      <li><a href="#mycourse">courses</a></li>
+      <li><a href="#mylearn">Learnathon</a></li>
+    </ul>
+  </nav>
+  <section class="projects" id="mydata">
+    <div class="max-width"> 
+     <h2 class="title">Datathon</h2>
+     <div class="about-content">
+       <div class="column left">
+         <img src="../image/ibm.jpeg" alt="">
+       </div>
+       <div class="column right">
+         <div class="text">Project: AI <span>Assistant</span></div>
+         <p>My participation and collaboration in<span> IBM </span> datathon in the year 2022 .our team decided to make AI assistant,we sucessfully completed  and uploaded it.this was our first project.
+           </p>
+         <a href="https://github.com/sbravindran03/AI-Assitance">project Link</a>  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projects" id="myfoss">
+  <div class="max-width"  > 
+   <h2 class="title">Foss Event</h2>
+   <div class="about-content">
+     <div class="column left">
+       <img src="../image/quizcert.jpeg" alt="">
+     </div>
+     <div class="column right">
+       <div class="text">Event<span> Quiz</span></div>
+       <p>The event organised by<span> jaya foss club as </span> a part of freedom software freedom day held on 17th september</p>
+       <a href="../port/quizimg.html">image</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="projects" id="mycourse">
+  <div class="max-width"  > 
+   <h2 class="title">Course certificate</h2>
+   <div class="about-content">
+     <div class="column left2">
+       <img src="../image/cert.jpeg" alt="">
+     </div>
+     <div class="column right">
+       <div class="text">courses <span>python, c & c++ </span></div>
+       <p>These are courses are done by me in thiruninravur center from <span>03-feb-2021 to 05-jun-2021</span>and awarded the grade B+.</p>
+       <!-- <a href="#">project Link</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="projects" id="mylearn">
+  <div class="max-width"  > 
+   <h2 class="title">Learnathon</h2>
+   <div class="about-content">
+     <div class="column left">
+       <img src="../image/celonis.jpeg" alt="">
+     </div>
+     <div class="column right">
+       <div class="text">course <span>celonis</span></div>
+       <p>My participation  in<span> learn</span>athon in the year 2022.</p>
+        
+       <!-- <a href="#">project</a> --> 
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="projects">
+  <div class="max-width"  > 
+   <h2 class="title">Learnathon</h2>
+   <div class="about-content">
+     <div class="column left">
+       <img src="../image/.jpeg" alt="">
+     </div>
+     <div class="column right">
+       <div class="text">course <span>blenty</span></div>
+       <p>My participation in<span> learn</span>athon in the year 2022 .
+         </p>
+       </p>
+       <!-- <a href="#">project Link</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</section>
+<section class="projects">
+  <div class="max-width"  > 
+   <h2 class="title">Learnathon</h2>
+   <div class="about-content">
+     <div class="column left">
+       <img src="../image/vmvare.jpeg" alt="">
+     </div>
+     <div class="column right">
+       <div class="text">course <span>vmv</span>vare</div>
+       <p>My participation and collaboration in<span>IBM </span> datathon in the year 2022 .our team decided to make AI assistant,we sucessfully completed  and uploaded it.this was our first project.
+         </p>
+       </p>
+       <!-- <a href="#">project Link</a> -->  
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>

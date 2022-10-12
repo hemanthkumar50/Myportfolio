@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        *{
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          list-style: none;
+          box-sizing: border-box;
+        }
+        body{
+          background: black;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      
+       section{
+        background: black;
+        padding: 55px 50px;
+      
+        }
+        ::-webkit-scrollbar{
+        display:none;
+       }
+      
+      .projects .title{
+        color: white;
+        position: relative;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin:10px 0px;
+       
+      
+      }
+      .right p span{
+        color: yellow;
+      }
+       
+      .projects .about-content{ 
+       display:flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-between;
+       
+      
+      }
+      .projects .about-content .left img{
+         
+         align-items: center;
+         margin: 25px 20px;
+         height: 75vh;
+         width: 80vh;
+         object-fit: cover;
+         
+      }
+      .projects .about-content .left2 img{
+         
+         align-items: center;
+         margin: 25px 20px;
+         height: 105vh;
+         width: 80vh;
+         object-fit: cover;
+         
+      }
+      .projects .about-content .right{
+        color: white;
+        width:46%;
+      }
+      .projects .about-content .right .text{
+        font-size:30px;
+        font-weight: 600;
+        color: blue;
+      }
+      .projects .about-content .right .text span{
+        color: red;
+      }
+      .projects .about-content .right p{
+        font-size:25px;
+        color: white;
+        
+      }
+      .projects .about-content .right a{
+        display:inline-block;
+        align-items: space-between;
+        margin: 30px 5px;
+        background: blue;
+        color: white;
+        font-weight: 400;
+        font-size: 25px;
+        border-radius: 6px;
+        border:2px solid blue;
+        transition: all 0.3s ease;
+      }
+      .projects .about-content .right a:hover{
+        color:blue;
+        background: none;
+      }
+      .about-content{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+      }
+      /* about responsive */
+        @media(max-width:1274px){
+        .projects .about-content .right{
+           width: 100%;
+        }
+      }
+       @media(max-width:1274px){
+        .projects .about-content .left img{
+          width: 75%;
+          height: 80%;
+        }
+      }
+      @media(max-width:670px){
+        .projects .about-content .left2 img{
+          width: 75%;
+          height: 80%;
+        }
+    }</style>
+</head>
+<body>
+    <section class="projects" id="mycourse">
+        <div class="max-width"  > 
+         <h2 class="title">Course certificate</h2>
+         <div class="about-content">
+           <div class="column left2">
+             <img src="../image/trophy.jpeg" alt="">
+           </div>
+           <div class="column right">
+             <div class="text">Quiz event<span> Trophy image</span></div>
+             <p>This is my first achievement in my college. i proud of myself getting this <span> award</span></p>
+             <!-- <a href="#">project Link</a> -->  
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+</body>
+</html>

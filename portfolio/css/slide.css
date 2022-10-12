@@ -1,0 +1,110 @@
+html,body{
+    margin:0;
+    padding:0;
+    background:#364b63;
+}
+::-webkit-scrollbar{
+    display:none;
+ }
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.slider{
+    background: url(../image/a1.png);
+    background-size:cover;
+    height:60vh;
+    width:90vh;
+    box-shadow:0px 5px 8px rgba(0,0,0,.3);
+    animation: animate 20s infinite;
+}
+::-webkit-scrollbar{
+    display:none;
+   }
+@keyframes animate{
+    10%{
+        background:url(../image/a1.png);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    } 
+    30%{
+        background:url(../image/a3.jpeg);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    }
+    50%{
+        background:url(../image/a2.jpeg);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    }
+    70%{
+        background:url(../image/a4.jpeg);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    
+    }
+    90%{
+        background:url(../image/a5.jpeg);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    } 
+    100%{
+        background:url(../image/a6.jpeg);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    } 
+    120%{
+        background:url(../image/win.png);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    } 
+    140%{
+        background:url(../image/a7.png);
+        background-size :cover;
+        height: 60vh;
+        width: 90vh;
+    } 
+}
+
+@media screen and (max-width:621px){
+    .center{
+       display: flex;
+       align-items: center;
+       width: 50vh;
+        }
+        .slider{   
+            width:50vh;
+        }
+       
+}
+ @media screen and (max-width:540px){
+    .center{
+        display: flex;
+        align-items: center;
+        height: 20vh;
+        width:20vh;
+
+        }
+        .slider{   
+            display: flex;
+            align-items: center;
+            height: 20vh;
+            width:20vh;
+        }
+    } 
+        @media screen and (max-width:470px){
+            .slider{
+                height:50vh;
+                width:50vh;
+            }
+        } 
+       
